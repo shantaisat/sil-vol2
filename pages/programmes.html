@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SILVOL - Programmes</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white font-sans">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between px-8 py-4 border-b border-gray-200 bg-white"
+    >
+      <span class="text-xl font-bold tracking-tight text-gray-900">
+        SILVOL
+      </span>
+
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-600">
+        <a href="/index.html" class="hover:text-gray-900 transition-colors"
+          >Home</a
+        >
+        <a
+          href="./pages/programmes.html"
+          class="hover:text-gray-900 transition-colors"
+          >Programmes</a
+        >
+        <a href="./about.html" class="hover:text-gray-900 transition-colors"
+          >About</a
+        >
+        <a
+          href="/pages/resources.html"
+          class="hover:text-gray-900 transition-colors"
+          >Resources</a
+        >
+        <a href="./partners.html" class="hover:text-gray-900 transition-colors"
+          >Partners</a
+        >
+        <a
+          href="/pages/contact.html"
+          class="hover:text-gray-900 transition-colors"
+          >Contact</a
+        >
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#" class="text-sm text-gray-700 hover:text-gray-900">
+          Log In
+        </a>
+
+        <a
+          href="#"
+          class="bg-emerald-600 text-white text-sm px-4 py-2 rounded hover:bg-emerald-700 transition-colors"
+        >
+          Get Started
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="grid md:grid-cols-2 gap-8 px-8 py-16 max-w-6xl mx-auto items-center"
+    >
+      <div>
+        <p class="text-sm text-emerald-600 font-medium mb-3">Our Programmes</p>
+
+        <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-4">
+          Five connected arms.<br />
+          One shared mission.
+        </h1>
+
+        <p class="text-gray-600 leading-relaxed text-sm">
+          Each programme is designed to meet learners where they are and help
+          them build the confidence and skills they need.
+        </p>
+      </div>
+
+      <div
+        class="bg-gray-100 rounded-lg h-56 flex items-center justify-center text-gray-400"
+      >
+        <svg
+          class="w-10 h-10"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="2"
+            stroke-width="1.5"
+          ></rect>
+          <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Programme Cards -->
+    <section class="px-8 py-12 max-w-6xl mx-auto space-y-6">
+      <!-- SILVOL CONNECT -->
+      <div
+        class="grid md:grid-cols-2 gap-6 items-center border border-gray-200 rounded-xl p-6 bg-white"
+      >
+        <div>
+          <div
+            class="bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                stroke-width="1.5"
+              ></rect>
+              <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-gray-900 mb-2">SILVOL CONNECT</h2>
+
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Digital confidence and community support for adults and seniors. Get
+            help with everyday technology through guided support and local
+            lessons.
+          </p>
+
+          <a
+            href="#"
+            class="text-emerald-600 text-sm font-medium hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+      </div>
+
+      <!-- SILVOL LEARN -->
+      <div
+        class="grid md:grid-cols-2 gap-6 items-center border border-gray-200 rounded-xl p-6 bg-gray-50"
+      >
+        <div class="md:order-2">
+          <div
+            class="bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                stroke-width="1.5"
+              ></rect>
+              <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="md:order-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">SILVOL LEARN</h2>
+
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Online courses and workshops covering digital skills, employability,
+            productivity and more.
+          </p>
+
+          <a
+            href="#"
+            class="text-emerald-600 text-sm font-medium hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+      </div>
+
+      <!-- SILVOL AI -->
+      <div
+        class="grid md:grid-cols-2 gap-6 items-center border border-gray-200 rounded-xl p-6 bg-white"
+      >
+        <div>
+          <div
+            class="bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                stroke-width="1.5"
+              ></rect>
+              <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-gray-900 mb-2">SILVOL AI</h2>
+
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Practical AI literacy for everyday life and work. Understand, use
+            and benefit from AI tools with confidence.
+          </p>
+
+          <a
+            href="#"
+            class="text-emerald-600 text-sm font-medium hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+      </div>
+
+      <!-- SILVOL FUTURES -->
+      <div
+        class="grid md:grid-cols-2 gap-6 items-center border border-gray-200 rounded-xl p-6 bg-gray-50"
+      >
+        <div class="md:order-2">
+          <div
+            class="bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                stroke-width="1.5"
+              ></rect>
+              <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="md:order-1">
+          <h2 class="text-xl font-bold text-gray-900 mb-2">SILVOL FUTURES</h2>
+
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Flexible digital learning for young people and alternative education
+            settings.
+          </p>
+
+          <a
+            href="#"
+            class="text-emerald-600 text-sm font-medium hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+      </div>
+
+      <!-- SILVOL HUBS -->
+      <div
+        class="grid md:grid-cols-2 gap-6 items-center border border-gray-200 rounded-xl p-6 bg-white"
+      >
+        <div>
+          <div
+            class="bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                stroke-width="1.5"
+              ></rect>
+              <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-gray-900 mb-2">SILVOL HUBS</h2>
+
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Community learning hubs and blended programmes delivered in local
+            centres, libraries and community spaces.
+          </p>
+
+          <a
+            href="#"
+            class="text-emerald-600 text-sm font-medium hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-emerald-600 px-8 py-14 text-center text-white">
+      <h2 class="text-2xl font-bold mb-2">Not sure where to start?</h2>
+
+      <p class="text-emerald-100 text-sm mb-6">
+        Take our short quiz and we'll recommend the best programme for you.
+      </p>
+
+      <a
+        href="#"
+        class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded text-sm hover:bg-emerald-50 transition-colors"
+      >
+        Find My Path
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 px-8 py-12">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-white font-bold text-lg mb-2">SILVOL</div>
+
+          <p class="text-sm text-gray-400">
+            Empowering communities through digital skills and AI readiness.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Explore</div>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            Programmes
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            About
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            Resources
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            News
+          </a>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Support</div>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            Help Centre
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            FAQs
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            Accessibility
+          </a>
+
+          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1">
+            Privacy Policy
+          </a>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Connect</div>
+
+          <div class="flex gap-3 text-gray-400 text-sm">
+            <a href="#" class="hover:text-white">Facebook</a>
+            <a href="#" class="hover:text-white">Twitter</a>
+            <a href="#" class="hover:text-white">LinkedIn</a>
+            <a href="#" class="hover:text-white">YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500"
+      >
+        © 2025 SILVOL. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SILVOL - Contact</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white font-sans">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between px-8 py-4 border-b border-gray-200 bg-white"
+    >
+      <span class="text-xl font-bold tracking-tight text-gray-900">SILVOL</span>
+
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-600">
+        <a href="/index.html" class="hover:text-gray-900 transition-colors"
+          >Home</a
+        >
+        <a
+          href="./programmes.html"
+          class="hover:text-gray-900 transition-colors"
+          >Programmes</a
+        >
+        <a href="./about.html" class="hover:text-gray-900 transition-colors"
+          >About</a
+        >
+        <a href="./resources.html" class="hover:text-gray-900 transition-colors"
+          >Resources</a
+        >
+        <a
+          href="/pages/partners.html"
+          class="hover:text-gray-900 transition-colors"
+          >Partners</a
+        >
+        <a href="./contact.html" class="hover:text-gray-900 transition-colors"
+          >Contact</a
+        >
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#" class="text-sm text-gray-700 hover:text-gray-900">Log In</a>
+        <a
+          href="#"
+          class="bg-emerald-600 text-white text-sm px-4 py-2 rounded hover:bg-emerald-700"
+        >
+          Get Started
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="px-8 py-12 max-w-6xl mx-auto">
+      <p class="text-sm text-emerald-600 font-medium mb-1">Get in touch</p>
+
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">We're here to help.</h1>
+
+      <p class="text-gray-600 text-sm max-w-lg">
+        Have a question, want to learn more, or interested in partnering with
+        us? Send us a message and we'll get back to you.
+      </p>
+    </section>
+
+    <!-- Content -->
+    <section class="px-8 pb-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <!-- Form -->
+      <div>
+        <h2 class="text-xl font-bold text-gray-900 mb-6">Send us a message</h2>
+
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-700 mb-1">Your name</label>
+            <input
+              type="text"
+              name="name"
+              class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700 mb-1"
+              >Email address</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700 mb-1"
+              >Organisation (optional)</label
+            >
+            <input
+              type="text"
+              name="organisation"
+              class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700 mb-1"
+              >I'm interested in</label
+            >
+            <select
+              name="interest"
+              class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            >
+              <option value="">Select an option</option>
+              <option value="learning">Learning / Training</option>
+              <option value="partnership">Partnership</option>
+              <option value="funding">Funding</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-700 mb-1">Message</label>
+            <textarea
+              name="message"
+              rows="5"
+              class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-emerald-600 text-white py-2.5 rounded text-sm font-semibold hover:bg-emerald-700"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact info -->
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-xl font-bold text-gray-900 mb-6">
+            Other ways to reach us
+          </h2>
+
+          <div class="space-y-4">
+            <div class="flex gap-3">
+              <div class="text-emerald-600">✉</div>
+              <div>
+                <div class="text-sm font-medium text-gray-700">Email</div>
+                <a
+                  href="mailto:hello@silvol.org"
+                  class="text-sm text-emerald-600"
+                  >hello@silvol.org</a
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <div class="text-emerald-600">📞</div>
+              <div>
+                <div class="text-sm font-medium text-gray-700">Phone</div>
+                <div class="text-sm text-gray-600">0121 123 4567</div>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <div class="text-emerald-600">📍</div>
+              <div>
+                <div class="text-sm font-medium text-gray-700">Address</div>
+                <div class="text-sm text-gray-600">
+                  SILVOL, Community Hub<br />
+                  Birmingham, B1 4AA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="mt-6">
+            <div class="text-sm font-medium text-gray-700 mb-3">Follow us</div>
+
+            <div class="flex gap-3">
+              <div
+                class="w-8 h-8 border rounded-full flex items-center justify-center text-xs"
+              >
+                f
+              </div>
+              <div
+                class="w-8 h-8 border rounded-full flex items-center justify-center text-xs"
+              >
+                tw
+              </div>
+              <div
+                class="w-8 h-8 border rounded-full flex items-center justify-center text-xs"
+              >
+                in
+              </div>
+              <div
+                class="w-8 h-8 border rounded-full flex items-center justify-center text-xs"
+              >
+                📷
+              </div>
+              <div
+                class="w-8 h-8 border rounded-full flex items-center justify-center text-xs"
+              >
+                yt
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner CTA -->
+        <div class="border border-gray-200 rounded-xl p-6 bg-gray-50">
+          <h3 class="font-bold text-gray-900 mb-2">
+            For organisations and partners
+          </h3>
+
+          <p class="text-sm text-gray-600 mb-4">
+            Interested in working together? Visit our partner page.
+          </p>
+
+          <a
+            href="#"
+            class="border border-gray-300 px-4 py-2 rounded text-sm inline-block hover:bg-white"
+          >
+            Partnerships Page
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 px-8 py-12">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-white font-bold text-lg mb-2">SILVOL</div>
+          <p class="text-sm text-gray-400">
+            Empowering communities through digital skills and AI readiness.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Explore</div>
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white"
+            >Programmes</a
+          >
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white">About</a>
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white"
+            >Resources</a
+          >
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white">News</a>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Support</div>
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white"
+            >Help Centre</a
+          >
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white">FAQs</a>
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white"
+            >Accessibility</a
+          >
+          <a class="block text-sm text-gray-400 mb-1 hover:text-white"
+            >Privacy Policy</a
+          >
+        </div>
+
+        <div>
+          <div class="text-white font-semibold text-sm mb-3">Connect</div>
+          <div class="flex gap-3 text-sm">
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>LinkedIn</span>
+            <span>YouTube</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500"
+      >
+        © 2025 SILVOL. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Simple form handler -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = Object.fromEntries(new FormData(this));
+          console.log("Form submitted:", formData);
+
+          alert("Message sent (demo only). Check console.");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
