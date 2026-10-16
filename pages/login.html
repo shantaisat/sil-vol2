@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | SILVOL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body>
+    <main class="auth-shell">
+      <div class="auth-card">
+        <div class="auth-header">
+          <a href="../index.html" class="navbar-brand">SILVOL</a>
+          <span>
+            Don't have an account?
+            <a href="./signup.html" class="font-medium">Sign up</a>
+          </span>
+        </div>
+
+        <h1 class="auth-title">Welcome back</h1>
+        <p class="auth-subtitle">Log in to access your SILVOL account.</p>
+
+        <form class="auth-form" data-auth-form="login" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="email">Email address</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <div class="input-wrap">
+              <input
+                class="form-input pr-10"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              />
+              <button
+                type="button"
+                class="input-toggle"
+                data-toggle-password="password"
+                aria-label="Show password"
+              >
+                <svg class="size-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="auth-row">
+            <label class="form-check">
+              <input type="checkbox" name="remember" />
+              <span>Remember me</span>
+            </label>
+            <a href="./forgot-password.html" class="font-medium">
+              Forgot password?
+            </a>
+          </div>
+
+          <p class="hidden" data-form-message role="alert"></p>
+
+          <button type="submit" class="btn-primary btn-block">Login</button>
+        </form>
+
+        <div class="auth-divider">Or continue with</div>
+
+        <div class="auth-social">
+          <button type="button" class="btn-social" data-oauth="google" aria-label="Continue with Google">
+            <svg class="size-5" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z" />
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z" />
+              <path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z" />
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z" />
+            </svg>
+          </button>
+          <button type="button" class="btn-social" data-oauth="azure" aria-label="Continue with Microsoft">
+            <svg class="size-5" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#F25022" d="M2 2h9.5v9.5H2z" />
+              <path fill="#7FBA00" d="M12.5 2H22v9.5h-9.5z" />
+              <path fill="#00A4EF" d="M2 12.5h9.5V22H2z" />
+              <path fill="#FFB900" d="M12.5 12.5H22V22h-9.5z" />
+            </svg>
+          </button>
+          <button type="button" class="btn-social" data-oauth="apple" aria-label="Continue with Apple">
+            <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16.37 1.43c0 1.14-.46 2.22-1.2 3.01-.8.85-2.1 1.5-3.15 1.42-.13-1.1.42-2.25 1.17-3 .82-.85 2.2-1.46 3.18-1.43zM20.5 17.1c-.55 1.25-.82 1.8-1.52 2.9-.98 1.54-2.37 3.46-4.08 3.47-1.52.02-1.91-.99-3.97-.98-2.06.01-2.49 1-4.01.99-1.71-.02-3.02-1.74-4-3.28C.2 16.9-.1 11.8 1.6 9.2c1.2-1.85 3.1-2.93 4.88-2.93 1.82 0 2.96 1 4.47 1 1.46 0 2.35-1 4.46-1 1.58 0 3.26.86 4.46 2.35-3.92 2.15-3.28 7.75.63 8.48z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="panel-soft">
+          <svg class="size-5 shrink-0 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="5" y="11" width="14" height="9" rx="2" />
+            <path d="M8 11V8a4 4 0 018 0v3" />
+          </svg>
+          <div>
+            <div class="font-medium text-ink">Secure login</div>
+            <div>We use industry-standard security to protect your account.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="../scripts/auth.js"></script>
+  </body>
+</html>

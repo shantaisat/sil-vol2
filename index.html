@@ -5,143 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SILVOL</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind + SILVOL styles (processed by @tailwindcss/vite) -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
-  <body class="min-h-screen bg-white font-sans text-gray-900">
+  <body>
     <!-- Navbar -->
-    <nav
-      class="flex items-center justify-between px-8 py-4 border-b border-gray-200 bg-white"
-    >
-      <span class="text-xl font-bold tracking-tight"> SILVOL </span>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">SILVOL</a>
 
-      <div class="hidden md:flex items-center gap-6 text-sm text-gray-600">
-        <a href="#" class="hover:text-gray-900 transition-colors">Home</a>
-        <a
-          href="./pages/programmes.html"
-          class="hover:text-gray-900 transition-colors"
-          >Programmes</a
-        >
-        <a
-          href="./pages/about.html"
-          class="hover:text-gray-900 transition-colors"
-          >About</a
-        >
-
-        <a
-          href="./pages/partners.html"
-          class="hover:text-gray-900 transition-colors"
-          >Partners</a
-        >
-        <a
-          href="./pages/contact.html"
-          class="hover:text-gray-900 transition-colors"
-          >Contact</a
-        >
+      <div class="navbar-links">
+        <a href="#" class="nav-link" aria-current="page">Home</a>
+        <a href="./pages/programmes.html" class="nav-link">Programmes</a>
+        <a href="./pages/about.html" class="nav-link">About</a>
+        <a href="./pages/partners.html" class="nav-link">Partners</a>
+        <a href="./pages/contact.html" class="nav-link">Contact</a>
       </div>
 
       <div class="flex items-center gap-3">
-        <a href="#" class="text-sm text-gray-700 hover:text-gray-900">
-          Log In
-        </a>
-
-        <a
-          href="#"
-          class="bg-emerald-600 text-white text-sm px-4 py-2 rounded hover:bg-emerald-700 transition-colors"
-        >
-          Get Started
-        </a>
+        <a href="./pages/login.html" class="nav-link">Log In</a>
+        <a href="./pages/signup.html" class="btn-primary">Get Started</a>
       </div>
     </nav>
 
     <!-- Hero -->
-    <section
-      class="grid md:grid-cols-2 gap-8 px-8 py-16 max-w-6xl mx-auto items-center"
-    >
+    <section class="container-page hero">
       <div>
-        <h1 class="text-4xl font-bold leading-tight mb-4">
+        <h1 class="hero-title">
           Building digital confidence.<br />
           Creating brighter futures.
         </h1>
 
-        <p class="text-gray-600 mb-6 leading-relaxed">
+        <p class="hero-text">
           SILVOL delivers practical digital skills and AI readiness learning
           through community, education and partnership. Together, we empower
           people and strengthen communities.
         </p>
 
-        <div class="flex gap-3 flex-wrap">
-          <a
-            href="#"
-            class="bg-emerald-600 text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-emerald-700 transition-colors"
-          >
-            Get Started
-          </a>
-
-          <a
-            href="#"
-            class="border border-gray-300 text-gray-700 px-5 py-2.5 rounded text-sm font-medium hover:bg-gray-50 transition-colors"
-          >
+        <div class="hero-actions">
+          <a href="./pages/signup.html" class="btn-primary">Get Started</a>
+          <a href="./pages/programmes.html" class="btn-secondary">
             Explore Programmes
           </a>
         </div>
       </div>
 
-      <div
-        class="bg-gray-100 rounded-lg h-64 flex items-center justify-center text-gray-400"
-      >
+      <div class="hero-media">
         <svg
-          class="w-12 h-12"
+          class="size-12"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
+          aria-hidden="true"
         >
-          <rect
-            x="3"
-            y="3"
-            width="18"
-            height="18"
-            rx="2"
-            stroke-width="1.5"
-          ></rect>
-          <path d="M3 9h18M9 21V9" stroke-width="1.5"></path>
+          <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5" />
+          <path d="M3 9h18M9 21V9" stroke-width="1.5" />
         </svg>
       </div>
     </section>
 
     <!-- Features -->
-    <section class="bg-gray-50 px-8 py-12">
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="text-center">
-          <div class="text-2xl mb-2">⚡</div>
-          <div class="font-semibold text-sm mb-1">Practical Learning</div>
-          <div class="text-xs text-gray-500">
+    <section class="section-alt">
+      <div class="container-page feature-grid">
+        <div>
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Practical Learning</div>
+          <div class="feature-text">
             Real-world digital skills and AI confidence.
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="text-2xl mb-2">🏘️</div>
-          <div class="font-semibold text-sm mb-1">Community Focused</div>
-          <div class="text-xs text-gray-500">
+        <div>
+          <div class="feature-icon">🏘️</div>
+          <div class="feature-title">Community Focused</div>
+          <div class="feature-text">
             Delivered in communities that need it most.
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="text-2xl mb-2">♿</div>
-          <div class="font-semibold text-sm mb-1">Inclusive & Accessible</div>
-          <div class="text-xs text-gray-500">
+        <div>
+          <div class="feature-icon">♿</div>
+          <div class="feature-title">Inclusive &amp; Accessible</div>
+          <div class="feature-text">
             For all ages, backgrounds and abilities.
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="text-2xl mb-2">🔮</div>
-          <div class="font-semibold text-sm mb-1">Future Ready</div>
-          <div class="text-xs text-gray-500">
+        <div>
+          <div class="feature-icon">🔮</div>
+          <div class="feature-title">Future Ready</div>
+          <div class="feature-text">
             Preparing people for life and the digital future.
           </div>
         </div>
@@ -149,167 +110,94 @@
     </section>
 
     <!-- Programmes -->
-    <section class="px-8 py-14 max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-2">Our Programmes</h2>
-
-      <p class="text-center text-gray-500 text-sm mb-8">
+    <section class="section container-page">
+      <h2 class="section-title">Our Programmes</h2>
+      <p class="section-subtitle">
         Five connected arms working together to support learners, communities
         and organisations.
       </p>
 
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <div class="border border-gray-200 rounded-lg p-4">
-          <div
-            class="bg-gray-100 rounded h-20 mb-3 flex items-center justify-center text-gray-300 text-xs"
-          >
-            img
-          </div>
-
-          <div class="font-semibold text-xs mb-1">SILVOL CONNECT</div>
-
-          <div class="text-xs text-gray-500 mb-2">
+      <div class="programme-grid">
+        <div class="programme-card">
+          <div class="programme-img">img</div>
+          <div class="programme-title">SILVOL CONNECT</div>
+          <div class="programme-text">
             Digital confidence and community support.
           </div>
-
-          <a href="#" class="text-emerald-600 text-xs hover:underline">
-            Learn more →
-          </a>
+          <a href="#" class="btn-text text-xs">Learn more →</a>
         </div>
 
-        <div class="border border-gray-200 rounded-lg p-4">
-          <div
-            class="bg-gray-100 rounded h-20 mb-3 flex items-center justify-center text-gray-300 text-xs"
-          >
-            img
-          </div>
-
-          <div class="font-semibold text-xs mb-1">SILVOL LEARN</div>
-
-          <div class="text-xs text-gray-500 mb-2">
-            Digital skills and learning pathways.
-          </div>
-
-          <a href="#" class="text-emerald-600 text-xs hover:underline">
-            Learn more →
-          </a>
+        <div class="programme-card">
+          <div class="programme-img">img</div>
+          <div class="programme-title">SILVOL LEARN</div>
+          <div class="programme-text">Digital skills and learning pathways.</div>
+          <a href="#" class="btn-text text-xs">Learn more →</a>
         </div>
 
-        <div class="border border-gray-200 rounded-lg p-4">
-          <div
-            class="bg-gray-100 rounded h-20 mb-3 flex items-center justify-center text-gray-300 text-xs"
-          >
-            img
-          </div>
-
-          <div class="font-semibold text-xs mb-1">SILVOL AI</div>
-
-          <div class="text-xs text-gray-500 mb-2">Practical AI readiness.</div>
-
-          <a href="#" class="text-emerald-600 text-xs hover:underline">
-            Learn more →
-          </a>
+        <div class="programme-card">
+          <div class="programme-img">img</div>
+          <div class="programme-title">SILVOL AI</div>
+          <div class="programme-text">Practical AI readiness.</div>
+          <a href="#" class="btn-text text-xs">Learn more →</a>
         </div>
 
-        <div class="border border-gray-200 rounded-lg p-4">
-          <div
-            class="bg-gray-100 rounded h-20 mb-3 flex items-center justify-center text-gray-300 text-xs"
-          >
-            img
-          </div>
-
-          <div class="font-semibold text-xs mb-1">SILVOL FUTURES</div>
-
-          <div class="text-xs text-gray-500 mb-2">
+        <div class="programme-card">
+          <div class="programme-img">img</div>
+          <div class="programme-title">SILVOL FUTURES</div>
+          <div class="programme-text">
             Flexible learning for young people and future talent.
           </div>
-
-          <a href="#" class="text-emerald-600 text-xs hover:underline">
-            Learn more →
-          </a>
+          <a href="#" class="btn-text text-xs">Learn more →</a>
         </div>
 
-        <div class="border border-gray-200 rounded-lg p-4">
-          <div
-            class="bg-gray-100 rounded h-20 mb-3 flex items-center justify-center text-gray-300 text-xs"
-          >
-            img
-          </div>
-
-          <div class="font-semibold text-xs mb-1">SILVOL HUBS</div>
-
-          <div class="text-xs text-gray-500 mb-2">
+        <div class="programme-card">
+          <div class="programme-img">img</div>
+          <div class="programme-title">SILVOL HUBS</div>
+          <div class="programme-text">
             Community learning hubs and blended learning.
           </div>
-
-          <a href="#" class="text-emerald-600 text-xs hover:underline">
-            Learn more →
-          </a>
+          <a href="#" class="btn-text text-xs">Learn more →</a>
         </div>
       </div>
     </section>
 
     <!-- How It Works -->
-    <section class="bg-gray-50 px-8 py-14">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-2">How It Works</h2>
-
-        <p class="text-center text-gray-500 text-sm mb-10">
+    <section class="section-alt">
+      <div class="container-page max-w-4xl">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
           Simple steps to start your learning journey.
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="text-center">
-            <div
-              class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-lg"
-            >
-              1
-            </div>
-
-            <div class="font-semibold text-sm mb-1">Create an account</div>
-
-            <div class="text-xs text-gray-500">
+        <div class="step-grid">
+          <div>
+            <div class="step-number">1</div>
+            <div class="feature-title">Create an account</div>
+            <div class="feature-text">
               Sign up in minutes and tell us about yourself.
             </div>
           </div>
 
-          <div class="text-center">
-            <div
-              class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-lg"
-            >
-              2
-            </div>
-
-            <div class="font-semibold text-sm mb-1">Choose your path</div>
-
-            <div class="text-xs text-gray-500">
+          <div>
+            <div class="step-number">2</div>
+            <div class="feature-title">Choose your path</div>
+            <div class="feature-text">
               Browse programmes and learning options that suit you.
             </div>
           </div>
 
-          <div class="text-center">
-            <div
-              class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-lg"
-            >
-              3
-            </div>
-
-            <div class="font-semibold text-sm mb-1">Learn and grow</div>
-
-            <div class="text-xs text-gray-500">
+          <div>
+            <div class="step-number">3</div>
+            <div class="feature-title">Learn and grow</div>
+            <div class="feature-text">
               Access courses, sessions and support from expert tutors.
             </div>
           </div>
 
-          <div class="text-center">
-            <div
-              class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-lg"
-            >
-              4
-            </div>
-
-            <div class="font-semibold text-sm mb-1">Track your progress</div>
-
-            <div class="text-xs text-gray-500">
+          <div>
+            <div class="step-number">4</div>
+            <div class="feature-title">Track your progress</div>
+            <div class="feature-text">
               See your progress, achievements and next steps.
             </div>
           </div>
@@ -318,118 +206,86 @@
     </section>
 
     <!-- Impact -->
-    <section class="px-8 py-14 max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-10">Our Impact</h2>
+    <section class="section container-page">
+      <h2 class="section-title mb-10">Our Impact</h2>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="impact-grid">
         <div>
-          <div class="text-3xl font-bold text-emerald-600 mb-1">1000+</div>
-          <div class="text-sm text-gray-500">Learners supported</div>
+          <div class="impact-number">1000+</div>
+          <div class="impact-label">Learners supported</div>
         </div>
 
         <div>
-          <div class="text-3xl font-bold text-emerald-600 mb-1">50+</div>
-          <div class="text-sm text-gray-500">Communities engaged</div>
+          <div class="impact-number">50+</div>
+          <div class="impact-label">Communities engaged</div>
         </div>
 
         <div>
-          <div class="text-3xl font-bold text-emerald-600 mb-1">25+</div>
-          <div class="text-sm text-gray-500">Partner organisations</div>
+          <div class="impact-number">25+</div>
+          <div class="impact-label">Partner organisations</div>
         </div>
 
         <div>
-          <div class="text-3xl font-bold text-emerald-600 mb-1">95%</div>
-          <div class="text-sm text-gray-500">Would recommend SILVOL</div>
+          <div class="impact-number">95%</div>
+          <div class="impact-label">Would recommend SILVOL</div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="bg-emerald-600 px-8 py-14 text-center text-white">
-      <h2 class="text-2xl font-bold mb-2">Ready to start your journey?</h2>
+    <section class="cta">
+      <div class="container-page">
+        <h2 class="cta-title">Ready to start your journey?</h2>
+        <p class="cta-text">
+          Join thousands of learners building skills and brighter futures.
+        </p>
 
-      <p class="text-emerald-100 mb-6 text-sm">
-        Join thousands of learners building skills and brighter futures.
-      </p>
-
-      <div class="flex gap-3 justify-center flex-wrap">
-        <a
-          href="#"
-          class="bg-white text-emerald-700 font-semibold px-5 py-2.5 rounded text-sm hover:bg-emerald-50 transition-colors"
-        >
-          Get Started
-        </a>
-
-        <a
-          href="#"
-          class="border border-white text-white px-5 py-2.5 rounded text-sm hover:bg-emerald-700 transition-colors"
-        >
-          Explore Programmes
-        </a>
+        <div class="cta-actions">
+          <a href="./pages/signup.html" class="btn-light">Get Started</a>
+          <a href="#" class="btn-outline-light">Explore Programmes</a>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 px-8 py-12">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
-        <div>
-          <div class="text-white font-bold text-lg mb-2">SILVOL</div>
+    <footer class="footer">
+      <div class="container-page">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">SILVOL</div>
+            <p class="footer-text">
+              Empowering communities through digital skills and AI readiness.
+            </p>
+          </div>
 
-          <p class="text-sm text-gray-400">
-            Empowering communities through digital skills and AI readiness.
-          </p>
-        </div>
+          <div>
+            <div class="footer-heading">Explore</div>
+            <a href="#" class="footer-link">Programmes</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Resources</a>
+            <a href="#" class="footer-link">News</a>
+          </div>
 
-        <div>
-          <div class="text-white font-semibold text-sm mb-3">Explore</div>
+          <div>
+            <div class="footer-heading">Support</div>
+            <a href="#" class="footer-link">Help Centre</a>
+            <a href="#" class="footer-link">FAQs</a>
+            <a href="#" class="footer-link">Accessibility</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </div>
 
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >Programmes</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >About</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >Resources</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >News</a
-          >
-        </div>
-
-        <div>
-          <div class="text-white font-semibold text-sm mb-3">Support</div>
-
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >Help Centre</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >FAQs</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >Accessibility</a
-          >
-          <a href="#" class="block text-sm text-gray-400 hover:text-white mb-1"
-            >Privacy Policy</a
-          >
-        </div>
-
-        <div>
-          <div class="text-white font-semibold text-sm mb-3">Connect</div>
-
-          <div class="flex gap-3 text-gray-400">
-            <a href="#" class="hover:text-white text-sm">Facebook</a>
-            <a href="#" class="hover:text-white text-sm">Twitter</a>
-            <a href="#" class="hover:text-white text-sm">LinkedIn</a>
-            <a href="#" class="hover:text-white text-sm">YouTube</a>
+          <div>
+            <div class="footer-heading">Connect</div>
+            <div class="footer-social">
+              <a href="#" class="footer-link">Facebook</a>
+              <a href="#" class="footer-link">Twitter</a>
+              <a href="#" class="footer-link">LinkedIn</a>
+              <a href="#" class="footer-link">YouTube</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500"
-      >
-        © 2025 SILVOL. All rights reserved.
+        <div class="footer-bottom">© 2025 SILVOL. All rights reserved.</div>
       </div>
     </footer>
   </body>
